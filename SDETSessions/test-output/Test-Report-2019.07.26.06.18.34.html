@@ -51,7 +51,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jul 24, 2019 09:23:26 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Jul 26, 2019 06:18:34 AM</span>
 				</a>
 			</li>
 			<li>
@@ -76,8 +76,7 @@
 					<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+											<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -146,7 +145,7 @@
 					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='50%'>3</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='50%'>3</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>3</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -164,14 +163,14 @@
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>loginTest</span>
-						<span class='test-time'>Jul 24, 2019 09:23:40 AM</span>
+						<span class='test-time'>Jul 26, 2019 06:18:44 AM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 24, 2019 09:23:40 AM</span>
-	<span class='label end-time'>Jul 24, 2019 09:23:47 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+97ms</span>
+	<span class='label start-time'>Jul 26, 2019 06:18:44 AM</span>
+	<span class='label end-time'>Jul 26, 2019 06:18:44 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+12ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -185,45 +184,24 @@
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>9:23:40 AM</td>
+					<td class='timestamp'>6:18:44 AM</td>
 					<td class='step-details'><span class='label white-text red'>loginTest</span></td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>9:23:40 AM</td>
-					<td class='step-details'>Exception detailsorg.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User or Password is not valid}
-  (Session info: chrome=75.0.3770.142): 
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'OCAUTO403', ip: '10.56.128.231', os.name: 'Windows Server 2008 R2', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\ais\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:55088}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: b22b269761b183a2451eb4ed2d0e175f</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:23:47 AM</td>
-					<td class='step-details'>Before if0</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:23:47 AM</td>
-					<td class='step-details'>Before if1</td>
+					<td class='timestamp'>6:18:44 AM</td>
+					<td class='step-details'>Exception detailsjava.lang.AssertionError: expected [true] but found [false]</td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>9:23:47 AM</td>
-					<td class='step-details'>Screenshot is below:com.aventstack.extentreports.ExtentTest@77102b91</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:23:47 AM</td>
-					<td class='step-details'>After if</td>
+					<td class='timestamp'>6:18:44 AM</td>
+					<td class='step-details'>Screenshot is below:com.aventstack.extentreports.ExtentTest@7d9e8ef7</td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
 							<ul class='screenshots'>
-								<li><img data-featherlight='C:\Users\ais\eclipse-workspace\SDETSessions\Screenshots\loginTest2019.07.24.09.23.26.png' width='10%' src='C:\Users\ais\eclipse-workspace\SDETSessions\Screenshots\loginTest2019.07.24.09.23.26.png' data-src='C:\Users\ais\eclipse-workspace\SDETSessions\Screenshots\loginTest2019.07.24.09.23.26.png'></li>
+								<li><img data-featherlight='C:\Users\ais\git\SDETSessions\SDETSessions\Screenshots\loginTest.png' width='10%' src='C:\Users\ais\git\SDETSessions\SDETSessions\Screenshots\loginTest.png' data-src='C:\Users\ais\git\SDETSessions\SDETSessions\Screenshots\loginTest.png'></li>
 							</ul>
 					</div>
 				</li>
@@ -268,25 +246,25 @@ Session ID: b22b269761b183a2451eb4ed2d0e175f</td>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>6</div>
+					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 24, 2019 09:23:26 AM</div>
+					<div class='panel-lead'>Jul 26, 2019 06:18:34 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 24, 2019 09:23:49 AM</div>
+			 		<div class='panel-lead'>Jul 26, 2019 06:18:45 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>22,556ms</div>
+					<div class='panel-lead'>10,933ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -337,7 +315,7 @@ Session ID: b22b269761b183a2451eb4ed2d0e175f</td>
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
-				infoChild: 3,
+				infoChild: 0,
 				exceptionsChild: 3,
 				
 				passGrandChild: 0,

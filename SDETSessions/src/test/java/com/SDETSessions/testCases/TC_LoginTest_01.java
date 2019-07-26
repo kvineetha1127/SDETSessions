@@ -1,5 +1,7 @@
 package com.SDETSessions.testCases;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.*;
 
@@ -8,7 +10,7 @@ import com.SDETSessions.pageObjects.LoginPage;
 public class TC_LoginTest_01 extends BaseClass
 {
 	@Test
-	public void loginTest()
+	public void loginTest() throws IOException
 	{
 		
 		LoginPage lp = new LoginPage(driver);
@@ -18,13 +20,14 @@ public class TC_LoginTest_01 extends BaseClass
 		logger.info("Enter the password "+password+"in the edit box");
 		lp.clickLogin();
 		
-		if(driver.getTitle().equals("Guru99 Bank Manager HomePage"))
+		if(driver.getTitle().equals("Guru99 Bank Manager HomePage1"))
 		{
 			Assert.assertTrue(true);
 			logger.info("Logged in to the application successfully");
 		}
 		else
 		{
+			captureScreen(driver,"loginTest");
 			Assert.assertTrue(false);
 			logger.info("Login failed");
 		}
